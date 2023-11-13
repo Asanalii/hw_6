@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/presentationFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.animation.study.StartFragment"
+        android:label="StartFragment">
+
+        <action
+            android:id="@+id/action_startFragment_to_viewAnimationFragment"
+            app:destination="@id/viewAnimationFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_presentationFragment"
+            app:destination="@id/presentationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewAnimationFragment"
+        android:name="com.example.animation.study.ViewAnimationFragment"
+        android:label="ViewAnimationFragment" >
+        <action
+            android:id="@+id/action_viewAnimationFragment_to_sharedStartFragment"
+            app:destination="@id/sharedStartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sharedEndFragment"
+        android:name="com.example.animation.study.SharedEndFragment"
+        android:label="SharedEndFragment" >
+        <action
+            android:id="@+id/action_sharedEndFragment_to_motionFragment"
+            app:destination="@id/motionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sharedStartFragment"
+        android:name="com.example.animation.study.SharedStartFragment"
+        android:label="SharedStartFragment" >
+        <action
+            android:id="@+id/action_sharedStartFragment_to_sharedEndFragment"
+            app:destination="@id/sharedEndFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/motionFragment"
+        android:name="com.example.animation.study.MotionFragment"
+        android:label="MotionFragment" />
+    <fragment
+        android:id="@+id/presentationFragment"
+        android:name="com.example.animation.PresentationFragment"
+        android:label="PresentationFragment" >
+        <action
+            android:id="@+id/action_presentationFragment_to_cityFragment"
+            app:destination="@id/cityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.example.animation.CityFragment"
+        android:label="CityFragment" >
+        <action
+            android:id="@+id/action_cityFragment_to_cityInfoFragment"
+            app:destination="@id/cityInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityInfoFragment"
+        android:name="com.example.animation.CityInfoFragment"
+        android:label="CityInfoFragment" />
+
+
+</navigation>

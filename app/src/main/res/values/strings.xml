@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">animation</string>
+    <string name="next">next</string>
+    <string name="rotation">rotation</string>
+    <string name="fill">fill</string>
+    <string name="transition">transition</string>
+    <string name="scale">scale</string>
+    <string name="reset">RESET</string>
+    <string name="animation">animation</string>
+    <string name="hello_world">Hello world</string>
+    <string name="steel">STEEL</string>
+    <string name="gallery">GALLERY</string>
+    <string name="main_text">A space for you to access your good times with a click and record adventures and special moments with family or friends, using our quick and very practical organization system.</string>
+    <string name="let_s_go">Let\'s go!</string>
+    <string name="new_york">New york</string>
+    <string name="street">Street</string>
+</resources>
