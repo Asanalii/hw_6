@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/street"
         android:src="@drawable/ic_street"
-        android:transitionName="actionImage"
         />
 
     <TextView
@@ -24,7 +23,6 @@
         android:textSize="17sp"
         android:background="#323232"
         android:padding="5dp"
-        android:transitionName="actionTitle"
 
         />
 </LinearLayout>

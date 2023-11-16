@@ -56,6 +56,9 @@ class CityAdapter(
             binding.image.setImageResource(item.pic)
             binding.title.text = item.title
 
+            binding.image.transitionName = item.id.toString()
+            binding.title.transitionName = item.title + item.id.toString()
+
             val extras = FragmentNavigatorExtras(
                 binding.image to "actionImage",
                 binding.title to "actionTitle"
@@ -81,5 +84,6 @@ data class ActionListDTO(
     val title: String? = null,
     @DrawableRes
     val pic: Int,
-    val description: String? = null
+    val description: String? = null,
+    val id: Int
 )
