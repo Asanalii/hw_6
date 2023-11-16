@@ -1,5 +1,6 @@
 package com.example.animation
 
+import android.animation.AnimatorSet
 import android.os.Bundle
 import android.transition.TransitionInflater
 import android.util.Log
@@ -42,7 +43,12 @@ class CityInfoFragment:Fragment() {
         sharedElementEnterTransition =
             TransitionInflater.from(requireContext()).inflateTransition(android.R.transition.move)
 
-//        Log.d("ExtraCallsProvider", )
+        binding.image.setOnClickListener {
+            binding.image.animate()
+                .rotation(360f)
+                .setDuration(2000)
+                .start()
+        }
     }
 
 
