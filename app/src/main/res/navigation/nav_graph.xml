@@ -50,8 +50,22 @@
         android:label="PresentationFragment" >
         <action
             android:id="@+id/action_presentationFragment_to_cityFragment"
-            app:destination="@id/cityFragment" />
+            app:destination="@id/cityMvvmFragment" />
+<!--        <action-->
+<!--            android:id="@+id/action_presentationFragment_to_cityMvpFragment"-->
+<!--            app:destination="@id/cityMvpFragment" />-->
+
+  </fragment>
+
+    <fragment
+        android:id="@+id/cityMvvmFragment"
+        android:name="com.example.animation.mvvm.CityMvvmFragment"
+        android:label="CityMvvmFragment" >
+        <action
+            android:id="@+id/action_cityMvvmFragment_to_cityInfoFragment"
+            app:destination="@id/cityInfoFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/cityFragment"
         android:name="com.example.animation.CityFragment"
@@ -60,6 +74,7 @@
             android:id="@+id/action_cityFragment_to_cityInfoFragment"
             app:destination="@id/cityInfoFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/cityInfoFragment"
         android:name="com.example.animation.CityInfoFragment"
@@ -67,6 +82,14 @@
         <argument
             android:name="id"
             app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityMvpFragment"
+        android:name="com.example.animation.mvp.CityMvpFragment"
+        android:label="CityMvpFragment" >
+        <action
+            android:id="@+id/action_cityMvpFragment_to_cityInfoFragment"
+            app:destination="@id/cityInfoFragment" />
     </fragment>
 
 
